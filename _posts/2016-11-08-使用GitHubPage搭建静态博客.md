@@ -1,13 +1,15 @@
 ---
-title: 通过githubpage搭建一个静态博客
+title: 通过GithubPage搭建一个静态博客 （一）
 tag: githubpage
 ---
-### 准备工作
+>没空间、没域名..... 想做一个网站如何实现？恐怕使用 GitHub Page + jekyll 是最好的选择了，GitHub给你提供域名及空间，jekyll给你提供引擎支持及样式模板，你需要做的只是写文章就行了，如果你有兴趣也可以开发jekyll模板。当然这样的结合目前只能是实现静态的网站，如果你想实现复杂的功能及数据存储，恐怕还是需要购买专业的服务器做动态网站。
+
+#### 准备工作
 
 * 一个添加过ssh key 的 github账号
 * 可以使用git命令的工具，如 <a href='https://git-scm.com/downloads'>git base</a>
 
-<span style='color:#912222'>请务必确保满足以上条件。</a>
+<span style='color:#912222'>请务必确保满足以上条件。</span>
 
 ##### 一、 新建GitHubPage仓库
 
