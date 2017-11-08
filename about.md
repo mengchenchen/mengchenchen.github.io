@@ -1,18 +1,17 @@
 ---
-layout: page
-title: About
+title: About...
 permalink: /about/
+layout: default_post
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+## ..myself #
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hello there. How I’ve waited for you to come, Ive been here all alone. 
+Now that you've arrived. Please stay a while. And I promise I won't keep 
+you long. <style>a{color: #FFF;}a:hover{color: #f0f0f0;}.footer a{color: #800000;}</style>
+[_I'll keep you forever..._](https://youtu.be/vh1TsSaGlXQ?t=37s)
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## ...this blog #
 
+I write this blog because I like to chant, rant and sometimes say things that I probably shan't.
 
-[jekyll-organization]: https://github.com/jekyll
