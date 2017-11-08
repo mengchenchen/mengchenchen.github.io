@@ -101,4 +101,4 @@ tag: githubpage
 
 
 
-<br><span style='padding:5px;background:#333;color:#f5f5f5'>这篇文章主要作为自己学习记录、笔记。学习过程中避免不了的错误会出现在文章中，欢迎各位读者指出错误。</span>
+<br><span style='padding:15px;display:block;background:#333;color:#f5f5f5;font-size:14px'>这篇文章主要作为自己学习记录、笔记。学习过程中避免不了的错误会出现在文章中，欢迎各位读者指出错误。</span>
