@@ -2,22 +2,55 @@
 title: 通过githubpage搭建一个静态博客
 tag: githubpage
 ---
-###准备工作
-1.注册github账号
-2.在github上新建一个仓库，名称设置为“你的github的用户名.github.io”,我的 “mengchenchen.github.io”，以下使用其作为例子。记得你要把mengchenchen换成你的github用户名。
-（github 会自动识别为github page，可以直接通过pageurl访问）
-3.进入到mengchenchen.github.io仓库，复制项目url，选择你的本地文件夹，使用git base的git clone 项目地址名称，克隆到本地
-4.下载jekyll
-#### 官方网站 http://jekyll.com.cn
-使用命令前需要配置ruby环境，因为这个引擎是使用ruby开发的。
-4.1 windows系统安装包地址 https://rubyinstaller.org/downloads/
-4.2 
+### 准备工作
+
+* 一个添加过ssh key 的 github账号
+* 可以运行的ruby环境
+* 可以使用git命令的工具，如 <a href='https://git-scm.com/downloads'>git base</a>
+
+<span style='color:#912222'>请务必确保满足以上条件。</a>
+
+##### 一、 新建GitHubPage仓库
+
+1.1 登陆你的<a href='https://github.com/'>GitHub</a> 
+
+1.2 创建仓库
+
+点击右上角加号标志选择 <a href='https://github.com/new'>New repository</a> ,
 
 
-<p class="lead"> <a href="http://jekyllrb.com">Jekyll</a> is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.</p>
 
-From [the project's readme](https://github.com/jekyll/jekyll/blob/master/README.markdown):
+<a href='https://github.com/'>返回GitHub首页</a> ，如果看到你刚才创建的仓库，此步完成。
 
-> Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
+1.3 本地文件关联仓库
 
-It's an immensely useful tool. Find out more by [visiting the project on GitHub](https://github.com/jekyll/jekyll).
+① 选择项目需要存放的文件目录：如 D:\root 
+
+② 右键文件夹空白处右键，使用git base，输入命令克隆github仓库
+
+> git clone 你新建的仓库地址
+
+命令完成后 D:\www 文件夹下会创建一个mengchenchen.github.io 这里只是演示，以你的项目名称为准。
+
+1.4 测试
+
+① 首先我们创建一个index.html 文件，通过记事本随便打上一句话保存。
+
+② 推送文件到github仓库
+
+> 注意：这里只作为演示使用，具体命令请参考 git文档
+
+依次执行以下命令
+
+> git add .			
+>
+> git commit -m test
+>
+> git push
+
+③ 回到你的github主页，查看 mengchenchen.github.io 仓库多了一个index.html文件
+
+④ 最后测试结果
+
+使用浏览器在地址栏输入（输入填你自己的）。以我的举例：mengchenchen.github.io 
+
