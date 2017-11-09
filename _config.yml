@@ -16,15 +16,15 @@ permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 
 # Navigation
-nav:
- - name: "about"
-   href: "/about"
+#nav:
+ #- name: "about"
+  # href: "/about"
 
- - name: "reference"
-   href: "/ref"
+ #- name: "reference"
+  # href: "/ref"
 
- - name: "contact"
-   href: "mailto:ivantheterrible@1530to1584.gov?You%20are%20ooold..."
+ #- name: "contact"
+  # href: "mailto:ivantheterrible@1530to1584.gov?You%20are%20ooold..."
 
 # Sass
 sass:
