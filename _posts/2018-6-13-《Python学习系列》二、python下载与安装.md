@@ -1,6 +1,11 @@
+---
+title:python的下载与安装
+tag:python
+---
+
 #### 下载
 
-版本：2.7 （根据老教程走，据说2.7和3.5版本差别大，暂时先学，有了基础在上手3.5）
+版本：3.5
 
 系统：windows（其他系统不管）
 
@@ -81,5 +86,9 @@ Cmd 美化参考：https://zhuanlan.zhihu.com/p/31904974
 4、<b>注意</b> :如果在安装python前打开任何cmd窗口都需要关闭再重新打开
 
 <span style="padding:10px;display:block;color:white;background:black;font-size:12px">
-文章中用到的部分图片和部分内容来自以下三个网页<br>https://www.cnblogs.com/hongten/p/hongten_python_install.html<br>https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000<br>http://www.runoob.com/python/python-install.html<br></span>
+文章中用到的部分图片和部分内容来自以下三个网页<ul><li>https://www.cnblogs.com/hongten/p/hongten_python_install.html</li><li>https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000</li><li>http://www.runoob.com/python/python-install.html</li></ul></span>
+
+
+
+
 

@@ -1,3 +1,8 @@
+---
+title:python入门
+tag:python
+---
+
 ### 一
 
 #### 什么是Ptyhon？
