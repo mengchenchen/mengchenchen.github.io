@@ -1,6 +1,6 @@
 ---
-title:python的下载与安装
-tag:python
+title: python的下载与安装
+tag: python
 ---
 
 #### 下载
@@ -17,11 +17,7 @@ tag:python
 
 1、选择电脑安装电脑账户
 
-![](https://images.cnblogs.com/cnblogs_com/hongten/498466/o_hongten_python_install_1.png)
-
 2、选择安装目录（以实际安装为准，网上盗来的图）
-
-![](https://images.cnblogs.com/cnblogs_com/hongten/498466/o_hongten_python_install_2.png)
 
 windows版本的安装是傻瓜式的，在选择安装目录后一路点击Next >（记住你的安装目录即可）
 

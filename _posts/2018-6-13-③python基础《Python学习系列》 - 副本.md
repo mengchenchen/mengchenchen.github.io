@@ -1,6 +1,6 @@
 ---
-title:python基础
-tag:python
+title: python基础
+tag: python
 ---
 
 ##### 注释
