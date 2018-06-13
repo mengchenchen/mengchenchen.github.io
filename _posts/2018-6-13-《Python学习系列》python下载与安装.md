@@ -14,7 +14,7 @@
 
 ![](https://images.cnblogs.com/cnblogs_com/hongten/498466/o_hongten_python_install_1.png)
 
-2、选择安装目录（以实际安装为准，网上盗来的图![img](file:///C:\Users\Administrator\AppData\Local\Temp\SGPicFaceTpBq\8504\0C9958C8.png)）
+2、选择安装目录（以实际安装为准，网上盗来的图）
 
 ![](https://images.cnblogs.com/cnblogs_com/hongten/498466/o_hongten_python_install_2.png)
 
@@ -26,6 +26,8 @@ windows版本的安装是傻瓜式的，在选择安装目录后一路点击Next
 ```
 path=%path%;C:\Python27
 ```
+
+把`C:\Python27` 替换成你的python安装安装目录
 
 二、**计算机属性**
 
@@ -77,4 +79,16 @@ Cmd 美化参考：https://zhuanlan.zhihu.com/p/31904974
 在填写学校邮箱申请完成后，会收到一封激活邮件。点击链接激活后会收到一封包含下载地址链接的邮件，就可以享用 Jetbrains 的所有专业软件了。
 ```
 4、<b>注意</b> :如果在安装python前打开任何cmd窗口都需要关闭再重新打开
+
+
+
+<span style="padding:10px;display:block;color:white;background:black;font-size:12px">
+
+文章中用到的部分图片和部分内容来自以下三个网页
+
+* https://www.cnblogs.com/hongten/p/hongten_python_install.html
+* https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001374738150500472fd5785c194ebea336061163a8a974000
+* http://www.runoob.com/python/python-install.html
+
+</span>
 
