@@ -1,16 +1,23 @@
 ### Python 的下载与安装
 #### 下载
 官网：https://www.python.org/
+
 国内镜像：https://pan.baidu.com/s/1kU5OCOB#list/path=%2Fpub%2Fpython 
+
 版本：2.7 （根据老教程走，据说2.7和3.5版本差别大，暂时先学，有了基础在上手3.5）
 系统：windows（其他系统不管）
 
 #### 设置环境变量
-1. 命令行直接输入
- ```path=%path%;C:\Python27 ```
-2. 计算机属性
-按下window键+pause break键->高级系统设置->高级->环境变量->系统变量->Path->编辑，将Python安装目录新增至path（win10列表直接添加，win7以；为分割添加）
-http://www.runoob.com/wp-content/uploads/2013/11/201209201707594792.png
+1. 命令行直接输入 
+
+```
+path=%path%;C:\Python27
+```
+
+1. 计算机属性
+  按下window键+pause markdown插入图片break键->高级系统设置->高级->环境变量->系统变量->Path->编辑，将Python安装目录新增至path（win10列表直接添加，win7以；为分割添加）
+
+  ![avatar](http://www.runoob.com/wp-content/uploads/2013/11/201209201707594792.png)
 
 #### Python运行模式
 一.交互式：设置过Python环境变量在任何目录下进入命令行模式，输入Ptython
@@ -52,6 +59,6 @@ Cmd 美化参考：https://zhuanlan.zhihu.com/p/31904974
 申请地址：https://www.jetbrains.com/student/
 在填写学校邮箱申请完成后，会收到一封激活邮件。点击链接激活后会收到一封包含下载地址链接的邮件，就可以享用 Jetbrains 的所有专业软件了。
 ```
-4.<b>注意</b> :如果在安装python执行启用任何cmd窗口都需要关闭再重新打开
+4.<b>注意</b> :如果在安装python前打开任何cmd窗口都需要关闭再重新打开
 
 
