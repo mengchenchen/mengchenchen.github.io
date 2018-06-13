@@ -1,6 +1,6 @@
 ---
-title:python入门
-tag:python
+title: python入门
+tag: python
 ---
 
 ### 一
