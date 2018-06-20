@@ -1,5 +1,5 @@
 ---
-title: python入门
+title: 《Python学习系列》1、python入门
 tag: python
 ---
 

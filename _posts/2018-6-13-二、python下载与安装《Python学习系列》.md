@@ -1,5 +1,5 @@
 ---
-title: python的下载与安装
+title: 《Python学习系列》2、python的下载与安装
 tag: python
 ---
 

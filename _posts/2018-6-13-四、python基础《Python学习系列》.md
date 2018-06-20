@@ -1,5 +1,5 @@
 ---
-title: python基础
+title: 《Python学习系列》3、python基础
 tag: python
 ---
 
@@ -369,3 +369,121 @@ print(str8.lstrip("*")) # *****kaiig
 print(str8.strip("*")) # kaiig
 
 ```
+
+##### 列表 list
+
+```python
+​```
+创建列表
+列表名 = [选项1，选项2...，选项n]
+​```
+
+# 创建空列表
+list1 = []
+print(list1)	# []
+
+# 创建带有元素的列表
+list2  = [18,19,"sumk",True,225.53,23]
+print(list2) 	# [18,19,"sumk",True,225.53,23]
+
+# 列表元素的访问
+print(list2[2])		# sumk
+
+# 替换 索引值不能溢出，否则报错
+list2[2] = 'meng'
+print(list2)	# [18,19,"meng",True,225.53,23]
+
+# 列表相加
+print(list1 + list2)	# [18,19,"sumk",True,225.53,23]
+
+# 列表重复
+print(list2 * 2)	# [18,19,"sumk",True,225.53,23,18,19,"sumk",True,225.53,23]
+
+# 元素是否存在 in
+print(18 in list2)	# True
+
+# 列表截取
+print(list2[1:4])	# 索引1-3 [19,"sumk",True]
+print(list2[3:])	# 索引3之后的 [225.53,23]
+print(list2[:3])	# 索引3之前的  [18,19,"meng"]
+
+# 二维列表
+list3 = [[1,2,3],[4,5,6],[7,8,8]];
+print(list3[1][1])	# 5
+
+# list.append()
+# 在列表末尾添加一个新的元素
+list2.append(6)			# [18,19,"sumk",True,225.53,23,6]
+list2.append([7,8,9]) 	 # [18,19,"sumk",True,225.53,23,6,[7,8,9]]
+
+# extend()
+# 在列表末尾追加新的列表
+list4 = [1,2,3]
+list4.extend([4,5,6])
+print(list4)	# [1,2,3,[4,5,6]]
+
+# insert()
+# 在指定索引出插入一个新的元素,可以添加列表
+list5 = [1,2,3]
+list5.insert(2,100)	
+print(list5)		# [1,2,100,3]
+
+# pop(x=list[-1])
+# 移除列表中指定索引元素，默认移除最后一个元素
+# list[-1] 代表最后一个元素
+list5.pop()		#  [1,2,100,3]
+list5.pop(2)	#  [1,2,3]
+
+# remove()
+# 移除列表中的指定元素第一个
+list5.remove(1)		# [2,3]
+
+# clear()
+# 清楚列表中所有的元素
+list5.clear()
+
+# index(value[,start=None][,stop=None])
+# 寻找列表中指定元素的第一个匹配的索引值
+list6 = [1,2,3,5,6,5,6]
+print(list6.index(3))	# 2
+
+# len(list)
+# 获取列表元素个数
+print(len(list6))	# 7
+
+# max(list)
+# 获取列表中最大的元素
+print(max(list6))	# 6
+
+# min(list)
+# 获取列表中最小的元素
+print(min(list6))	# 1
+
+# count()
+# 查看指定元素在列表出现的次数
+list6.count(6)	# 2
+
+# reverse() 倒序
+list6.reverse()	# [6,6,5,5,3,2,1]
+
+# sort() 正序
+list6.sort()
+
+# 浅拷贝 引用拷贝
+list7 = list6	# 如果修改list7的值会直接改变list6，因为他们在内存中指向同一个地址
+
+# 深拷贝 内存拷贝
+list8 = list6.copy()	# 可以使用id() 获取内存地址，会开辟一个新空间
+
+# 将元组转换成列表
+print(list((1,2,3,4)))
+
+
+
+
+
+
+
+
+```
+
