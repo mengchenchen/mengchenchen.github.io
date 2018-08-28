@@ -1,14 +1,6 @@
 hi，你们好 ~
 
-我是孟晨晨，<b>男</b>，21岁，电子商务专业出身，技术起步于photoshop平面网页设计，之后遇见html/js/css开始了找工作之旅，自学php进入外包公司后，正式开始了程序员生涯。
-
-我的联系方式：
-
-- 微信：mlcdewx
-- 手机：15838254568
-- 邮箱：mandlandc@gmail.com 、15838254568@163.com
-- 其他：...
-
+我是孟晨晨，<b>男</b>，21岁，我的技术栈：html+css+js+php+git+linux+python...
 
 ##### Talks
 
