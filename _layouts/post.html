@@ -147,21 +147,23 @@ layout: default
                 {% endif %}
             </div>
 
-            <!-- gitcomment 评论框 -->
-            <div id="container"></div>
-            <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-            <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-            <script>
-                var gitment = new Gitment({
-                    owner: 'mengchenchen',
-                    repo: 'mengchenchen.github.io',
-                    oauth: {
-                        client_id: 'ea7db08485d85c77b06c',
-                        client_secret: '64f258c5443b26904aec4547faab83c16659821b',
-                    },
-                })
-                gitment.render('container')
-            </script>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
+                <!-- gitcomment 评论框 -->
+                <div id="container"></div>
+                <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+                <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+                <script>
+                    var gitment = new Gitment({
+                        owner: 'mengchenchen',
+                        repo: 'mengchenchen.github.io',
+                        oauth: {
+                            client_id: 'ea7db08485d85c77b06c',
+                            client_secret: '64f258c5443b26904aec4547faab83c16659821b',
+                        },
+                    })
+                    gitment.render('container')
+                </script>
+            </div>
         </div>
     </div>
 </article>
