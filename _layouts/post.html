@@ -147,8 +147,10 @@ layout: default
                 {% endif %}
             </div>
 
+            <!--Gitalk评论start  -->
+            {% if site.gitalk.enable %}
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
-                <!-- gitcomment 评论框 -->
+                <!-- 引入Gitalk评论插件  -->
                 <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
                 <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
                 <div id="gitalk-container"></div>
@@ -163,11 +165,14 @@ layout: default
                         owner: '{{site.gitalk.owner}}',
                         admin: ['{{site.gitalk.admin}}'],
                         distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-                        id: md5(location.pathname),
+                    id: md5(location.pathname),
                     });
                     gitalk.render('gitalk-container');
                 </script>
             </div>
+            {% endif %}
+            <!-- Gitalk end -->
+
         </div>
     </div>
 </article>
