@@ -1,6 +1,6 @@
 ---
 title: 为Github Page增加评论功能
-subtitle: 给个评论，感谢诸位
+subtitle: 有Github账号的人可以评论测试下
 tag: githubpage
 ---
 
@@ -12,10 +12,10 @@ tag: githubpage
 
 ## 解决
 
-- [Gitment](https://github.com/imsun/gitment) 作者：[孙土权](https://imsun.net/)
+- [Gitment](https://github.com/imsun/gitment) 
 - [Gitalk](https://gitalk.github.io/)
 
-就目前而言，我为本站添加评论功能时，主要接触到两个开源项目。两者的解决方案都是
+就目前而言，我为本站添加评论功能时，主要接触到上面的两个开源项目。两者的解决方案都是
 
 - 使用`Github Issues`作为评论的存储空间
 - 使用`Github`账号登陆评论
@@ -61,7 +61,7 @@ gitalk:
 
 记得找到合适的位置，把以下代码复制粘贴过去。
 
-```html
+```javascript
 <!--Gitalk评论start  -->
 {% if site.gitalk.enable %}
 <!-- 引入Gitalk评论插件  -->
