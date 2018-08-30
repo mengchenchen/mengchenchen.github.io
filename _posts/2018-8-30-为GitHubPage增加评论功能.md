@@ -73,8 +73,8 @@ gitalk:
 <script src="{{ site.baseurl }}/js/md5.min.js"></script>
 <script type="text/javascript">
     var gitalk = new Gitalk({
-        clientID: '{{site.gitalk.clientID}}',
-        clientSecret: '{{site.gitalk.clientSecret}}',
+        clientID: '你的client id',
+        clientSecret: '你的 client Secret',
         repo: '{{site.gitalk.repo}}',
         owner: '{{site.gitalk.owner}}',
         admin: ['{{site.gitalk.admin}}'],
