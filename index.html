@@ -40,4 +40,18 @@ description: "中華好兒女"
     {% endif %}
 </ul>
 {% endif %}
-<a href="http://www.ttmd5.com" title="md5在线解密">md5解密</a>
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: 'mengchenchen',
+  repo: 'mengchenchen.github.io',
+  oauth: {
+    client_id: 'ea7db08485d85c77b06c',
+    client_secret: '64f258c5443b26904aec4547faab83c16659821b',
+  },
+})
+gitment.render('container')
+</script>
