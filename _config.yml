@@ -83,6 +83,16 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 
+# Gitalk 评论系统
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: ea7db08485d85c77b06c                            #生成的clientID
+  clientSecret: 64f258c5443b26904aec4547faab83c16659821b    #生成的clientSecret
+  repo: mengchenchen.github.io    #仓库名称
+  owner: mengchenchen    #github用户名
+  admin: mengchenchen
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
 
 # Friends
 # friends: [

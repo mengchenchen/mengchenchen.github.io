@@ -149,19 +149,23 @@ layout: default
 
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 sidebar-container">
                 <!-- gitcomment 评论框 -->
-                <div id="container"></div>
-                <link rel="stylesheet" href="https://billts.site/extra_css/gitment.css">
-                <script src="https://billts.site/js/gitment.js"></script>
-                <script>
-                    var gitment = new Gitment({
-                        owner: 'mengchenchen',
-                        repo: 'mengchenchen.github.io',
-                        oauth: {
-                            client_id: 'ea7db08485d85c77b06c',
-                            client_secret: '64f258c5443b26904aec4547faab83c16659821b',
-                        },
-                    })
-                    gitment.render('container')
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+                <div id="gitalk-container"></div>
+                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
+                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
+                <script src="{{ site.baseurl }}/js/md5.min.js"></script>
+                <script type="text/javascript">
+                    var gitalk = new Gitalk({
+                        clientID: '{{site.gitalk.clientID}}',
+                        clientSecret: '{{site.gitalk.clientSecret}}',
+                        repo: '{{site.gitalk.repo}}',
+                        owner: '{{site.gitalk.owner}}',
+                        admin: ['{{site.gitalk.admin}}'],
+                        distractionFreeMode: {{site.gitalk.distractionFreeMode}},
+                        id: md5(location.pathname),
+                    });
+                    gitalk.render('gitalk-container');
                 </script>
             </div>
         </div>
