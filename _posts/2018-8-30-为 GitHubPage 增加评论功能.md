@@ -1,6 +1,6 @@
 ---
-title: 为Github Page增加评论功能
-subtitle: 有Github账号的人可以评论测试下
+title: 为 Github Page 增加评论功能
+subtitle: 需要使用 Github 账号评论
 tag: githubpage
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: 通过GithubPage搭建一个静态博客 （一）
+title: 通过 GithubPage 搭建一个静态博客 （一）
 tag: githubpage
 ---
 
