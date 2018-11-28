@@ -26,9 +26,7 @@ tag: PHP
 
 [官网](https://xdebug.org/download.php)
 
-![post-phpstormxdebug-phpinfo](../img/in-post/post-phpstormxdebug-phpinfo.png)
-
-选择版本：![1543385455124](C:\Users\Administrator\Desktop\1543385455124.png)
+![post-phpstormxdebug-phpinfo](/img/in-post/post-phpstormxdebug-phpinfo.png)
 
 > **注意：把下载下来的 xdebug.dll 移动到 php 安装目录的 ext 目录。**
 
@@ -73,11 +71,11 @@ xdebug.idekey = PHPSTORM
 
 ` Ctrl + Alt + s ` 打开设置
 
-![1](../img/in-post/post-phpstormxdebug-phpstormconfig1.png)
+![1](/img/in-post/post-phpstormxdebug-phpstormconfig1.png)
 
-![2](../img/in-post/post-phpstormxdebug-phpstormconfig2.png)
+![2](/img/in-post/post-phpstormxdebug-phpstormconfig2.png)
 
-![3](../img/in-post/post-phpstormxdebug-phpstormconfig3.png)
+![3](/img/in-post/post-phpstormxdebug-phpstormconfig3.png)
 
 ### 如何使用
 
