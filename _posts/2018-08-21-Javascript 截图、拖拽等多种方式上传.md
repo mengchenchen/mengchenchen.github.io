@@ -1,5 +1,6 @@
 ---
 title: Javascript 截图、拖拽等多种方式上传
+catalog: true
 tag: Javascript
 ---
 

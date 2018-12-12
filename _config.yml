@@ -42,7 +42,7 @@ gems: [jekyll-paginate]
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-kramdown:
+kramdown: rouge
   input: GFM                            # use Github Flavored Markdown !important
 
 
@@ -67,7 +67,7 @@ ga_domain: baidu.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "好人？哼！这个世界不存在的！！"
+sidebar-about-description: "不存在所谓的好人与坏人"
 sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
