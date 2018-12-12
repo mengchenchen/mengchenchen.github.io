@@ -1,9 +1,12 @@
 ---
-layout: post
-title: PHPStorm + Xdebug
-subtitle: Debug 新姿势
+layout:     post
+title:      PHPStorm + Xdebug
+subtitle:   Debug 新姿势
+date:       2018-12-12
+author:     Mengcc
 catalog: true
-tag: PHP
+tags:
+    - PHP
 ---
 
 ### 开始之前
