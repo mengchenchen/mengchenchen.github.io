@@ -1,4 +1,5 @@
 ---
+layout: post
 title: PHPStorm + Xdebug
 subtitle: Debug 新姿势
 catalog: true
