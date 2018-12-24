@@ -17,13 +17,44 @@ tag: Linux
 3. 依次点开 `任务计划程序（本地）> 任务计划库` 
 4. 右侧窗口进行详细傻瓜操作
 
+> 在 windows 下面定时执行一段程序，首先我们就需要一段程序，那程序从何而来。
+>
+> 1. 第三方获取的各种可执行程序
+> 2. 个人编写的可执行程序
+>
+> 一般来说可执行程序的后缀名为 `.exe`、`.msi`、`.vbs`、`.bat` 等等，具体可百度。
+>
+> 如何编写 windows 程序呢？c 语言、c#、c++、java、Vbscript 等各种编程语言都可以，现在只用 Vbs 来学习，其他语言学习的渠道很多也比较复杂。
+
+#### Vbscript
+
+微软公司的脚本对标 `Javscript` 可运行在浏览器和 `Windows` 系统桌面上，比较简单所以不能称之为语言。
+
+常用的一些函数和语法
+
+```vbscript
+' 注释使用英文单引号表示,没有多行注释
+' MsgBox 弹窗 
+MsgBox('下班了，需要关机吗？',VbOkCancel)
+' WshShell.Popup 这个也是弹窗,和MsgBox类似，不过多了一个时间参数
+WshShell.Popup("下班了，需要关机吗？不操作10分钟后自动关机！", 600, "下班提醒",vbOKCancel)
+```
+
+vbscript 相关
+
+- [popub 的使用方法](https://zhidao.baidu.com/question/585474893.html?qbl=relate_question_0&word=WshShell.Popup)
+- [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
+
 #### 自动关机（休眠） 
 
 新建文件 `shutdown.vbs`，用记事本打开，粘贴以下代码：
 
 ```vbscript
-m = MsgBox("下班了，需要关机吗？", vbOKCancel)
-If m = vbOk Then wscript.createobject("wscript.shell").run "shutdown -h",0
+Set WshShell = CreateObject("Wscript.Shell")
+w = WshShell.Popup("下班了，需要关机吗？不操作10分钟后自动关机！", 600, "下班提醒",vbOKCancel)
+If w = vbOk Or w <> vbCancel Then 
+	wscript.createobject("wscript.shell").run "shutdown -h",0
+End If
 ```
 
 这里需要提一下，保存文件记得修改编码，否则中文乱码。
