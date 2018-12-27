@@ -1,25 +1,21 @@
-# Site settings
+# 网站设置(Site settings)
 title: MccBlog
 SEOTitle: Mcc Blog | 孟晨晨（令）
 header-img: img/background-home.jpg
 email: mandlandc@gmail.com
 description: "关于生活工作与学习 | 孟晨晨，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @mcc孟晨晨 的个人博客，与你一起发现更大的世界。"
 keyword: "Mngcc, cc, Mecc Blog, 博客, 个人网站, 互联网, Web, PHP"
-url: "https://mengchenchen.github.io"              # your host, for absolute URL
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
-
+url: "https://mengchenchen.github.io"
+baseurl: "https://mengchenchen.github.io"
 
 # SNS settings
-RSS: false
+RSS: true
 #weibo_username:     huxpro
-#zhihu_username:     huxpro
+#zhihu_username:     sheng-ze-5-51
 github_username:    mengchenchen
 #twitter_username:   huxpro
 #facebook_username:  huxpro
 # linkedin_username:  firstname-lastname-idxxxx
-
-
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -29,15 +25,11 @@ paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-
-
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 gems: [jekyll-paginate]
 
-
-
-# Markdown settings
+# Markdown 设置(Markdown settings)
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
@@ -45,56 +37,41 @@ markdown: kramdown
 kramdown: 
   input: GFM                            # use Github Flavored Markdown !important
 
-
-
-# Disqus settings
-#disqus_username: hux
-
-# Netease setttings
-#netease_comment: false
-
-
-
-# Analytics settings
-# Baidu Analytics 
+# 统计设置(Analytics settings)
+# 百度统计(Baidu Analytics) [需要去注册]
 # ba_track_id: [your track id]
+# 谷歌统计(Google Analytics) [需要去注册]
+# ga_track_id: 'UA-49627206-1'
+# ga_domain: baidu.com
 
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: baidu.com
+# 工具栏设置(Sidebar settings)
+sidebar: true
+sidebar-about-description: "睁开眼睛看看世界 "
+sidebar-avatar: /img/avatar-mengchenchen.jpg
 
-
-
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "呵呵，世界！ "
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
-
-
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
+# 特色标签(Featured Tags)
+featured-tags: true
+# 如果一个标签使用率超过此值会被推荐 (A tag will be featured if the size of it is more than this condition value)
+featured-condition-size: 1
 
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
 # Gitalk 评论系统
 gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: ea7db08485d85c77b06c                            #生成的clientID
-  clientSecret: 64f258c5443b26904aec4547faab83c16659821b    #生成的clientSecret
-  repo: mengchenchen.github.io    #仓库名称
-  owner: mengchenchen    #github用户名
+  enable: true    
+  clientID: ea7db08485d85c77b06c
+  clientSecret: 64f258c5443b26904aec4547faab83c16659821b
+  # 仓库名称
+  repo: mengchenchen.github.io
+  # github用户名
+  owner: mengchenchen   
   admin: mengchenchen
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+  # 是否启用类似FB的阴影遮罩
+  distractionFreeMode: true
 
-
-# Friends
+# 友情链接(Friends)
 friends: [
   {
     title: "我的博客园",
