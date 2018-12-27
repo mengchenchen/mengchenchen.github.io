@@ -9,7 +9,7 @@ url: "https://mengchenchen.github.io"
 baseurl: "https://mengchenchen.github.io"
 
 # SNS settings
-RSS: true
+RSS: false
 #weibo_username:     huxpro
 #zhihu_username:     sheng-ze-5-51
 github_username:    mengchenchen
