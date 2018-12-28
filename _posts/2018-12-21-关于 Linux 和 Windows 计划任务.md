@@ -98,7 +98,7 @@ End If
 Set WshShell = CreateObject("Wscript.Shell")
 w = WshShell.Popup("下班了，需要休眠吗？不操作10分钟后自动关机", 600, "下班提醒",vbOKCancel)
 If w = vbOk Or w <> vbCancel Then
-	If IsEmpty(items) Else then
+    If Not IsEmpty(items) then
         ' 千万不要在前面加 dim，dim 只能用来声明不能赋值
         ' dim process = split(items," ")
 		process = split(items," ")
@@ -115,6 +115,8 @@ End If
 * split 类似于 php 的 explode 把字符串分割为数组
 * 字符串的拼接符号为 & 强制拼接
 * 所有 cmd 命令都由它 CreateObject("Wscript.Shell") 来完成
+* 单引号是注释，字符串不能使用单引号
+* 取反的方法是 Not 使用 ！ 和 <> 和 != 都不能用
 
 除此之外，翻阅的第三方网页在这，非常感谢！
 
