@@ -57,6 +57,77 @@ If w = vbOk Or w <> vbCancel Then
 End If
 ```
 
+---
+
+
+
+2018-12-28 更新如下
+
+```vbscript
+' 获取当前程序所在的文件位置
+Dim strWorkDir
+strWorkDir = Left(WScript.ScriptFullName,instrrev(WScript.ScriptFullName,"\")-1)
+
+' 加载配置文件
+dim fso
+file = strWorkDir & "\kill.txt"
+
+' 设置杀掉进程
+dim items
+set fso = CreateObject("Scripting.FileSystemObject")
+if fso.FileExists(file) then
+	set f = fso.OpenTextFile(file, 1, false)
+	items = f.ReadLine()
+	f.Close()
+	set f = nothing
+	set fso = nothing
+else
+	If MsgBox("在休眠时需要指定关闭进程么？",vbOKCancel) = VbOk Then
+		dim processInput
+		processInput = InputBox("输入你休眠时需要杀掉的进程，多个进程使用空格分开")
+		set f = fso.CreateTextFile(file, true)
+		f.Write(processInput)
+		f.Close()
+		set f = nothing
+		set fso = nothing
+		items = processInput
+	End If
+End If
+
+' 关机操作
+Set WshShell = CreateObject("Wscript.Shell")
+w = WshShell.Popup("下班了，需要休眠吗？不操作10分钟后自动关机", 600, "下班提醒",vbOKCancel)
+If w = vbOk Or w <> vbCancel Then
+	If IsEmpty(items) Else then
+        ' 千万不要在前面加 dim，dim 只能用来声明不能赋值
+        ' dim process = split(items," ")
+		process = split(items," ")
+		for each item in process
+  			WshShell.run "taskkill /f /im " & item, 0
+		next
+	End If
+	WshShell.run "shutdown -h",0
+End If
+```
+本次更新学到了一些关于 Vbs 的一些内容
+
+* dim 是用来声明变量，不能直接赋值
+* split 类似于 php 的 explode 把字符串分割为数组
+* 字符串的拼接符号为 & 强制拼接
+* 所有 cmd 命令都由它 CreateObject("Wscript.Shell") 来完成
+
+除此之外，翻阅的第三方网页在这，非常感谢！
+
+* [Vbs 模拟 include 函数](https://blog.csdn.net/wxqee/article/details/9992447)
+* [vbs 的 IsNull 和 IsEmpty 的区别](https://blog.csdn.net/icanlove/article/details/38086775)
+* [vbscript Split函数用法详解(字符串转数组函数)](https://www.jb51.net/article/49600.htm)
+* [cmd 一行运行多条命令](https://www.zybuluo.com/gongzhen/note/476036)
+* [关于文件的操作](https://www.cnblogs.com/wakey/p/5798185.html)  这个作者可以关注下里面 vbs 相关的内容比较多
+
+---
+
+
+
 这里需要提一下，保存文件记得修改编码，否则中文乱码。
 
 添加一条计划任务，设置每周工作日下午 5:30 执行 `shutdown.vbs` 程序，如果加班的情况选择否即可。
