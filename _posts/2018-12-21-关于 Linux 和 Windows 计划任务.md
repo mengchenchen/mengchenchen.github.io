@@ -27,6 +27,11 @@ tag: Linux
 
 微软公司的脚本对标 `Javscript` 可运行在浏览器和 `Windows` 系统桌面上，比较简单所以不能称之为语言。
 
+手册：
+
+* [](http://www.veryhuo.com/a/manual/vbscript/)
+* [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
+
 #### 案例 
 
 ##### 自动关机（休眠）
@@ -103,9 +108,9 @@ End If
 除此之外，翻阅的第三方网页在这，非常感谢！
 
 - [popub 的使用方法](https://zhidao.baidu.com/question/585474893.html?qbl=relate_question_0&word=WshShell.Popup)
-- [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
 
 * [Vbs 模拟 include 函数](https://blog.csdn.net/wxqee/article/details/9992447)
+* [vbs 的运算符](http://www.veryhuo.com/a/manual/vbscript/html/vtorivbscriptoperators.htm)
 * [vbs 的 IsNull 和 IsEmpty 的区别](https://blog.csdn.net/icanlove/article/details/38086775)
 * [vbscript Split函数用法详解(字符串转数组函数)](https://www.jb51.net/article/49600.htm)
 * [cmd 一行运行多条命令](https://www.zybuluo.com/gongzhen/note/476036)
@@ -115,7 +120,7 @@ End If
 
 
 
-这里需要提一下，保存文件记得修改编码，否则中文乱码。
+这里需要提一下，保存文件记得修改编码，否则中文乱码。（编写 vbs 强烈建议使用 notepad++）
 
 添加一条计划任务，设置每周工作日下午 5:30 执行 `shutdown.vbs` 程序，如果加班的情况选择否即可。
 
