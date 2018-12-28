@@ -1,10 +1,10 @@
 # 网站设置(Site settings)
 title: MccBlog
-SEOTitle: Mcc Blog | 孟晨晨（令）
+SEOTitle: 孟晨晨的个人博客 | MccBlog | 孟晨晨（令）
 header-img: img/background-home.jpg
 email: mandlandc@gmail.com
-description: "关于生活工作与学习 | 孟晨晨，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @mcc孟晨晨 的个人博客，与你一起发现更大的世界。"
-keyword: "Mngcc, cc, Mecc Blog, 博客, 个人网站, 互联网, Web, PHP"
+description: "孟晨晨 | 这里是孟晨晨的个人博客，PHP工作学习文章为主生活日常生活为辅，坚持原创文章的 95 后小伙的博客。"
+keyword: "Mengcc, mengchenchen,孟晨晨, Mecc Blog, 个人博客, 互联网, Web, PHP"
 url: "https://mengchenchen.github.io"
 baseurl: "https://mengchenchen.github.io"
 
