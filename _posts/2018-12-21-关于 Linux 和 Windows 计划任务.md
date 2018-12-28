@@ -101,11 +101,11 @@ If w = vbOk Or w <> vbCancel Then
     If Not IsEmpty(items) then
         ' 千万不要在前面加 dim，dim 只能用来声明不能赋值
         ' dim process = split(items," ")
-		process = split(items," ")
-		for each item in process
-  			WshShell.run "taskkill /f /im " & item, 0
-		next
-	End If
+        process = split(items," ")
+        for each item in process
+            WshShell.run "taskkill /f /im " & item, 0
+        next
+    End If
 	WshShell.run "shutdown -h",0
 End If
 ```
