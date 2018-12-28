@@ -1,0 +1,36 @@
+---
+title: 随记
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="{{ "/css/sketch/timeline.css" | prepend: site.baseurl }}" />
+<script src="{{ "/js/sketch/modernizr.custom.js" | prepend: site.baseurl }}"></script>
+
+<div class="container" style="margin:0;padding:0;width:100%;">
+	<header>
+		<h1>随心</h1>
+	</header>
+	<div class="main">
+		<ul class="cbp_tmtimeline">
+			<li>
+				<div class="cbp_tmlabel">
+					<h2 id="boxoffice">2016.06</h2>
+					<ul>
+						<li>
+							"Yanshuo.io" is an online full-featured presentation software to create Web-based slides which are linkable, sharable, cross-platform and without delivery friction. It differentiate from traditional presentation tools such as Powerpoint and Keynote due to its web-friendly and its strong belief in Web.
+						</li>
+						<li class="skill">
+							<span><b>JS</b></span>
+							<span class="i-react"></span>
+							<span class="link"><a target="_blank" href="https://yanshuo.io">Try it</a></span>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+{% for post in sketchs %}
+    {{ post.title }}
+{% endfor %}
