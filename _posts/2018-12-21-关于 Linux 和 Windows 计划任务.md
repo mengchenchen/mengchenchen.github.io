@@ -17,35 +17,19 @@ tag: Linux
 3. 依次点开 `任务计划程序（本地）> 任务计划库` 
 4. 右侧窗口进行详细傻瓜操作
 
-> 在 windows 下面定时执行一段程序，首先我们就需要一段程序，那程序从何而来。
->
-> 1. 第三方获取的各种可执行程序
-> 2. 个人编写的可执行程序
+> 在 windows 下面定时执行一段程序，首先我们就需要一段程序，那程序从何而来。① 第三方获取的各种可执行程序 ② 个人编写的可执行程序
 >
 > 一般来说可执行程序的后缀名为 `.exe`、`.msi`、`.vbs`、`.bat` 等等，具体可百度。
 >
-> 如何编写 windows 程序呢？c 语言、c#、c++、java、Vbscript 等各种编程语言都可以，现在只用 Vbs 来学习，其他语言学习的渠道很多也比较复杂。
+> 如何编写 windows 程序呢？c 语言、c#、c++、java、Vbscript 等各种编程语言都可以。
 
 #### Vbscript
 
 微软公司的脚本对标 `Javscript` 可运行在浏览器和 `Windows` 系统桌面上，比较简单所以不能称之为语言。
 
-常用的一些函数和语法
+#### 案例 
 
-```vbscript
-' 注释使用英文单引号表示,没有多行注释
-' MsgBox 弹窗 
-MsgBox('下班了，需要关机吗？',VbOkCancel)
-' WshShell.Popup 这个也是弹窗,和MsgBox类似，不过多了一个时间参数
-WshShell.Popup("下班了，需要关机吗？不操作10分钟后自动关机！", 600, "下班提醒",vbOKCancel)
-```
-
-vbscript 相关
-
-- [popub 的使用方法](https://zhidao.baidu.com/question/585474893.html?qbl=relate_question_0&word=WshShell.Popup)
-- [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
-
-#### 自动关机（休眠） 
+##### 自动关机（休眠）
 
 新建文件 `shutdown.vbs`，用记事本打开，粘贴以下代码：
 
@@ -70,27 +54,25 @@ strWorkDir = Left(WScript.ScriptFullName,instrrev(WScript.ScriptFullName,"\")-1)
 
 ' 加载配置文件
 dim fso
-file = strWorkDir & "\kill.txt"
+config = strWorkDir & "\kill.txt= strWorkDir & "\kill.txtc"
 
 ' 设置杀掉进程
 dim items
 set fso = CreateObject("Scripting.FileSystemObject")
-if fso.FileExists(file) then
-	set f = fso.OpenTextFile(file, 1, false)
+if fso.FileExists(config) then
+    set f = fso.OpenTextFile(config, 1, false)
 	items = f.ReadLine()
 	f.Close()
 	set f = nothing
 	set fso = nothing
 else
 	If MsgBox("在休眠时需要指定关闭进程么？",vbOKCancel) = VbOk Then
-		dim processInput
-		processInput = InputBox("输入你休眠时需要杀掉的进程，多个进程使用空格分开")
+		items = InputBox("输入你休眠时需要杀掉的进程，多个进程使用空格分开")
 		set f = fso.CreateTextFile(file, true)
-		f.Write(processInput)
+		f.Write(items)
 		f.Close()
 		set f = nothing
 		set fso = nothing
-		items = processInput
 	End If
 End If
 
@@ -116,9 +98,12 @@ End If
 * 字符串的拼接符号为 & 强制拼接
 * 所有 cmd 命令都由它 CreateObject("Wscript.Shell") 来完成
 * 单引号是注释，字符串不能使用单引号
-* 取反的方法是 Not 使用 ！ 和 <> 和 != 都不能用
+* 取反的方法是 Not ，使用 ！ 和 <> 和 != 都是错误的
 
 除此之外，翻阅的第三方网页在这，非常感谢！
+
+- [popub 的使用方法](https://zhidao.baidu.com/question/585474893.html?qbl=relate_question_0&word=WshShell.Popup)
+- [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
 
 * [Vbs 模拟 include 函数](https://blog.csdn.net/wxqee/article/details/9992447)
 * [vbs 的 IsNull 和 IsEmpty 的区别](https://blog.csdn.net/icanlove/article/details/38086775)
@@ -138,7 +123,7 @@ End If
 
 ### Linux 的计划任务
 
-**以下 [内容来源](https://blog.csdn.net/gaozhigang/article/details/79462177) 侵权删，本人进行重新排版**
+**以下内容均为转载，[传送门](https://blog.csdn.net/gaozhigang/article/details/79462177) ，侵权删，本人进行重新排版**
 
 > crond 是linux用来定期执行程序的命令。当安装完成操作系统之后，默认便会启动此任务调度命令。crond命令每分锺会定期检查是否有要执行的工作，如果有要执行的工作便会自动执行该工作。可以用以下的方法启动、关闭这个服务:
 
