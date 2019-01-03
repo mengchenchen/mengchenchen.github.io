@@ -29,7 +29,7 @@ tag: Linux
 
 手册：
 
-* [](http://www.veryhuo.com/a/manual/vbscript/)
+* [verhuo 教程](http://www.veryhuo.com/a/manual/vbscript/)
 * [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
 
 #### 案例 
