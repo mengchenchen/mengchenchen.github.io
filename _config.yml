@@ -6,7 +6,7 @@ email: mandlandc@gmail.com
 description: "孟晨晨 | 这里是孟晨晨的个人博客，PHP工作学习文章为主生活日常生活为辅，坚持原创文章的 95 后小伙的博客。"
 keyword: "Mengcc, mengchenchen,孟晨晨, Mecc Blog, 个人博客, 互联网, Web, PHP"
 url: "https://mengchenchen.github.io"
-baseurl: ""
+baseurl: "https://mengchenchen.github.io"
 
 # SNS settings
 RSS: false
