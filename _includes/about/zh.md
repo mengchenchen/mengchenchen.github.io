@@ -1,23 +1,15 @@
 #### 基本情况
 
->叫：孟晨晨
->
->性别：男
->
->生日：96年倒数第三天
->
->语言：PHP、Python、JavaScript、C#
->
->技术栈(精通)：PHP+GIT+Linux+JavaScript+HTML
->
->爱好：上班爱看大神博客，下班爱看喜剧小品，出门爱去登山游玩，没事就玩王者荣耀，偶尔唱唱小歌，有钱没钱都爱看手机汽车评测
+你好，我叫孟晨晨。
 
-##### 活跃在
+本站采用 github page 服务，初建与 2017 年，前后使用过两个主题。
 
-- 博客园
-- 开源中国
-- 知乎 、简书
-- Coding 、码云、GitHub
-- 工作QQ：1228529782
-- 国际邮箱：mandlandc@gmai.com
-- 国内邮箱：1228529782@qq.com
+技术栈:PHP+GIT+Linux+JavaScript+HTML等与网站相关整套知识结构。
+
+活跃在：知乎、码云、博客园、github 等
+
+国际邮箱：mandlandc@gmai.com
+
+国内邮箱：1228529782@qq.com
+
+> 个人不够优秀，关于过于简陋。多多包涵！博客网址 https://mengchenchen.github.io
