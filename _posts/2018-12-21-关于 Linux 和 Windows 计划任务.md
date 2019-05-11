@@ -59,7 +59,7 @@ strWorkDir = Left(WScript.ScriptFullName,instrrev(WScript.ScriptFullName,"\")-1)
 
 ' 加载配置文件
 dim fso
-config = strWorkDir & "\kill.txt= strWorkDir & "\kill.txtc"
+config = strWorkDir & "\kill.txtc"
 
 ' 设置杀掉进程
 dim items
@@ -73,7 +73,7 @@ if fso.FileExists(config) then
 else
 	If MsgBox("在休眠时需要指定关闭进程么？",vbOKCancel) = VbOk Then
 		items = InputBox("输入你休眠时需要杀掉的进程，多个进程使用空格分开")
-		set f = fso.CreateTextFile(file, true)
+		set f = fso.CreateTextFile(config, true)
 		f.Write(items)
 		f.Close()
 		set f = nothing
@@ -118,7 +118,7 @@ End If
 
 ---
 
-
+另存为文的时候设置 ANSI 否则无法执行。
 
 这里需要提一下，保存文件记得修改编码，否则中文乱码。（编写 vbs 强烈建议使用 notepad++）
 
