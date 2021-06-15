@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 《Python学习系列》1、python入门
 tag: python
 ---

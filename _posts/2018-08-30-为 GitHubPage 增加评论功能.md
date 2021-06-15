@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 为 Github Page 增加评论功能
 subtitle: 需要使用 Github 账号评论
 catalog: true

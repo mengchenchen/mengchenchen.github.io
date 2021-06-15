@@ -1,3 +1,13 @@
+---
+layout: post
+title: FastAdmin 绑定二级域名
+catalog: true
+tags: 
+ - ThinkPHP
+ - FastAdmin
+ - PHP
+---
+
 ## FastAdmin 绑定二级域名
 
 ### 说明

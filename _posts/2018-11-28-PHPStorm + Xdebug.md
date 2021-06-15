@@ -17,7 +17,7 @@ tags:
 
 * [官网](https://xdebug.org/download.php)
 
-![post-phpstormxdebug-phpinfo](/img/in-post/post-phpstormxdebug-phpinfo.png)
+![post-phpstormxdebug-phpinfo](/mccblog/img/in-post/post-phpstormxdebug-phpinfo.png)
 
 > **注意：把下载下来的 xdebug.dll 移动到 php 安装目录的 ext 目录。**
 
@@ -61,17 +61,17 @@ xdebug.idekey = PHPSTORM
 
 ` Ctrl + Alt + s ` 打开设置
 
-![1](/img/in-post/post-phpstormxdebug-phpstormconfig1.png)
+![1](/mccblog/img/in-post/post-phpstormxdebug-phpstormconfig1.png)
 
-![2](/img/in-post/post-phpstormxdebug-phpstormconfig2.png)
+![2](/mccblog/img/in-post/post-phpstormxdebug-phpstormconfig2.png)
 
-![3](/img/in-post/post-phpstormxdebug-phpstormconfig3.png)
+![3](/mccblog/img/in-post/post-phpstormxdebug-phpstormconfig3.png)
 
 ### 配置 xdebug helper
 
 右键扩展->选项
 
-![1](\img\in-post\_2020030910390439SS.png)
+![1](/mccblog/img\in-post\2020030910390439SS.png)
 
 ## 最后一步：使用
 
@@ -79,21 +79,21 @@ xdebug.idekey = PHPSTORM
 
 ① 打开 xdebug helper 调试开关
 
-![1](\img\in-post\_2020030910231023SS.png)
+![1](/mccblog/img/in-post/2020030910231023SS.png)
 
 ② 打开 phpstrom 监听 xdebug 开关
 
-![1](\img\in-post\_2020030910411141SS.png)
+![1](/mccblog/img/in-post/2020030910411141SS.png)
 
 ③ 打断点开始调试
 
 打断点
 
-![1](\img\in-post\_2020030910571257SS.png)
+![1](/mccblog/img/in-post/2020030910571257SS.png)
 
 打开 `xdebugtest.com` 并刷新页面，如下
 
-![2](\img\in-post\_2020030910441344SS.png)
+![2](/mccblog/img/in-post/2020030910441344SS.png)
 
 快捷键 F7 继续向下逐步执行进行调试。
 

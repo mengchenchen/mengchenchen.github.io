@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 通过 GithubPage 搭建一个静态博客 （一）
 tag: githubpage
 ---

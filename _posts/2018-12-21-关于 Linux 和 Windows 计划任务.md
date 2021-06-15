@@ -31,8 +31,17 @@ tag: Linux
 
 * [verhuo 教程](http://www.veryhuo.com/a/manual/vbscript/)
 * [W3school VBScript 教程](http://www.w3school.com.cn/vbscript/index.asp)
+* [cmd管理计划任务](https://blog.csdn.net/kongxx/article/details/80630124)
+* [cmd计划任务命令](https://blog.csdn.net/qq_39680564/article/details/88993633)
 
 #### 案例 
+
+##### cmd命令创建计划任务
+
+```
+# 手动创建一个在计算器启动的时候执行 activation.exe 程序
+schtasks.exe /create /tn "IDE delay by Brymg" /ru SYSTEM /sc ONSTART /tr "%cd%\activation.exe"
+```
 
 ##### 自动关机（休眠）
 

@@ -1,80 +1,188 @@
-# 网站设置(Site settings)
-title: MccBlog
-SEOTitle: 孟晨晨的个人博客 | MccBlog | 孟晨晨（令）
-header-img: img/background-home.jpg
-email: mandlandc@gmail.com
-description: "孟晨晨 | 这里是孟晨晨的个人博客，PHP工作学习文章为主生活日常生活为辅，坚持原创文章的 95 后小伙的博客。"
-keyword: "Mengcc, mengchenchen,孟晨晨, Mecc Blog, 个人博客, 互联网, Web, PHP"
-url: "https://mengchenchen.github.io"
-baseurl: "https://mengchenchen.github.io"
+# The Site Settings
+# v2.0
+# https://github.com/cotes2020/jekyll-theme-chirpy
+# © 2017-2019 Cotes Chung
+# MIT licensed
 
-# SNS settings
-RSS: false
-#weibo_username:     huxpro
-#zhihu_username:     sheng-ze-5-51
-github_username:    mengchenchen
-#twitter_username:   huxpro
-#facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
 
-# Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
+# jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+#--------------------------
+
+title: BrymgBlog                          # the main title
+
+tagline: 事旦关己，顿悟『盖吾眼界如此之狭隘』.  # it will display as the sub-title
+
+description: >-                        # used by seo meta and the atom feed
+  php开发, linux, php工程师, swoole,
+  php、go、python、linux开发学习中遇到的问题记录与解决方案技术分享型个人博客。
+
+# Replace with the website url, e.g. 'https://username.github.io'
+url: 'https://brymg.gitee.io'
+
+author: bryce meng                  # change to your full name
+
+avatar: /assets/img/sample/avatar.jpg   # support internet resources
+
+github:
+  username: mengchenchen             # change to your github username
+
+#twitter:
+ # username: twitter_username            # change to your twitter username
+
+social:
+  name: your_full_name                  # it will shows as the copyright owner in Footer
+  email: example@doamin.com             # change to your email address
+  links:
+    # The first element serves as the copyright owner's link
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
+    # Uncomment below to add more social links
+    # - https://www.facebook.com/username
+    # - https://www.linkedin.com/in/username
+
+google_site_verification: google_meta_tag_verification # change to your verification string
+
+#--------------------------
+
+
+# Only if your site type is GitHub Project sites and doesn't have a custom domain,
+# change below value to '/projectname'.
+baseurl: ''
+
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Asia/Shanghai
+
+google_analytics:
+  id: ''          # Fill with your Google Analytics ID
+  pv:
+    # The Google Analytics pageviews switch.
+    # DO NOT enable it unless you know how to deploy the Google Analytics superProxy.
+    enabled: false
+    # the next options only valid when `google_analytics.pv` is enabled.
+    proxy_url: ''
+    proxy_endpoint: ''
+    cache: false  # pv data local cache, good for the users from GFW area.
+
+disqus:
+  comments: false  # boolean type, the global switch for posts comments.
+  shortname: ''    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+
+
+# Prefer color scheme setting, available values:
+#
+#     dual   - Follow the system prefer color by default, and a toggle will display
+#              in the left bottom of Sidebar, which used for switch the theme between dark and light.
+#
+#     light  - Use the light color scheme
+#
+#     dark   - Use the dark color scheme
+#
+theme_mode: dual
+
+# boolean type, global switch for ToC in posts.
+toc: true
+
 paginate: 10
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
-
-# Markdown 设置(Markdown settings)
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
-kramdown: 
-  input: GFM                            # use Github Flavored Markdown !important
 
-# 统计设置(Analytics settings)
-# 百度统计(Baidu Analytics) [需要去注册]
-# ba_track_id: [your track id]
-# 谷歌统计(Google Analytics) [需要去注册]
-# ga_track_id: 'UA-49627206-1'
-# ga_domain: baidu.com
+highlighter: rouge
 
-# 工具栏设置(Sidebar settings)
-sidebar: true
-sidebar-about-description: "睁开眼睛看看世界 "
-sidebar-avatar: /img/avatar-mengchenchen.jpg
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts: # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: 'highlight'
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-# 特色标签(Featured Tags)
-featured-tags: true
-# 如果一个标签使用率超过此值会被推荐 (A tag will be featured if the size of it is more than this condition value)
-featured-condition-size: 1
+# DO NOT change this unless you're a Pro user on Jekyll and Web development,
+# or you think you're smart enough to change other relevant URLs within this template.
+permalink: /posts/:title/
 
-# Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
+defaults:
+  -
+    scope:
+      path: ""          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      location: Post
+      breadcrumb:
+        -
+          label: Posts
+          url: /
+  -
+    scope:
+      path: _drafts
+    values:
+      comments: false
+  -
+    scope:
+      path: categories
+    values:
+      tab_active: Categories
+      location: Category
+      breadcrumb:
+        -
+          label: Home
+          url: /
+        -
+          label: Categories
+          url: /tabs/categories/
+  -
+    scope:
+      path: tabs
+    values:
+      layout: page
+      dynamic_title: true    # Hide title in mobile screens.
+      breadcrumb:
+        -
+          label: Home
+          url: /
 
-# Gitalk 评论系统
-gitalk:
-  enable: true    
-  clientID: ea7db08485d85c77b06c
-  clientSecret: 64f258c5443b26904aec4547faab83c16659821b
-  # 仓库名称
-  repo: mengchenchen.github.io
-  # github用户名
-  owner: mengchenchen   
-  admin: mengchenchen
-  # 是否启用类似FB的阴影遮罩
-  distractionFreeMode: true
 
-# 友情链接(Friends)
-friends: [
-  {
-    title: "我的博客园",
-    href: "https://www.cnblogs.com/mengchenchen/"
-  }
-]
+sass:
+  sass_dir: /assets/css
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: [html, head, body, dt, dd, rt, rp,
+            optgroup, option, colgroup, caption,
+            thead, tbody, tfoot, tr, td, th]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+exclude:
+  - vendor        # Avoid Jekyll mistakenly read the vendor directory on Travis-CI's VM .
+  - Gemfile.lock
+  - Gemfile
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+
+sitemap_exclude:  # Sitemap will exclude the following items.
+  fuzzy:
+    - /assets/
+  accurate:
+    - /norobots/
+    - /tabs/
+    - /categories/
+    - /tags/
+    - /posts/
+    - 404.html
+    - feed.xml
+    - sitemap.xml
+    - robots.txt
+    - redirects.json

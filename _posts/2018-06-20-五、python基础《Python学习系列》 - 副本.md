@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 《Python学习系列》4、python trutle绘图模块
 tag: python
 ---
